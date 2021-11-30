@@ -50,9 +50,9 @@
     % First page is always landing page
     \ifnum\thepage<2\relax%
       % TUHH Logo
-      \node[outer sep=0, inner sep=0] (tuhh_logo) at (19.07mm+27.875mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=73.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+      \node[outer sep=0, inner sep=0] (tuhh_logo) at (19.07mm+25.875mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=73.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
       % TUHH Building A
-      \node[outer sep=0, inner sep=0pt] at (178.816mm+73.295mm, \the\paperheight-104.902mm-19.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.png}};
+      \node[outer sep=0, inner sep=0pt] at (178.816mm+72.75mm, \the\paperheight-104.902mm-23.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.png}};
 
       \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
       \begin{beamercolorbox}{tuhh teal}
@@ -95,19 +95,16 @@
 % Title page
 \defbeamertemplate*{title page}{tuhh}[1][]
 { 
-    \begin{beamercolorbox}[wd=1mm,ht=17.20mm,#1]{title page header}
-      % Margin Placeholder
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[leftskip=21.31mm,wd=142.19mm,dp=66.30mm,#1]{title page header}
+    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=66.30mm,#1]{title page header}
       \usebeamerfont{title}\inserttitle%
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=1mm,ht=13mm,#1]{title page header}
+    \begin{beamercolorbox}[wd=1mm,ht=14mm,#1]{title page header}
       % Margin Placeholder
     \end{beamercolorbox}%
     \begin{beamercolorbox}[leftskip=114.285mm,wd=550mm,#1]{title page header}
       \usebeamerfont{date}\DTMsetdatestyle{ddmmyyyy}\insertdate
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=1mm,ht=15mm,#1]{title page header}
+    \begin{beamercolorbox}[wd=1mm,ht=12mm,#1]{title page header}
       % Margin Placeholder
     \end{beamercolorbox}%
     \begin{beamercolorbox}[leftskip=21.336mm,wd=550mm,#1]{title page header}
