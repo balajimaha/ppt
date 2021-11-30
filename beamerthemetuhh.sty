@@ -15,6 +15,13 @@
 
 \setbeamertemplate{navigation symbols}{}
 
-\setbeamertemplate{itemize items}{\raisebox{0.166ex}{\footnotesize$\bullet$}}
+\setbeamertemplate{itemize items}{\raisebox{0.4ex}{\footnotesize$\bullet$}}
+\setbeamertemplate{itemize/enumerate subbody beginn}{\vspace{2mm}}
+\setbeamertemplate{itemize/enumerate subbody end}{\vspace{-2mm}}
+
+\let\tempone\itemize
+\let\temptwo\enditemize
+\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{1.5mm}}{\temptwo}
+
 
 \mode<all>
