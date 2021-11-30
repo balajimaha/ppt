@@ -11,3 +11,4 @@
 
 \usepackage[datesep=.,style=ddmmyy]{datetime2}
 
+\AtBeginDocument{\usebeamerfont{normal text}}
