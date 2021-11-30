@@ -13,4 +13,8 @@
 
 \AtBeginDocument{\usebeamerfont{normal text}}
 
+\newcommand{\finalpage}{
+    \usebeamertemplate{endpage}
+}
+
 \settowidth{\leftmargini}{\usebeamertemplate{itemize item}}

@@ -113,5 +113,78 @@
     \end{beamercolorbox}%
 }
 
+\setbeamertemplate{endpage}{
+  {\setbeamertemplate{background}
+    {
+    \begin{tikzpicture}
+      \begin{beamercolorbox}{tuhh teal}
+        \node[outer sep=0, inner sep=0, anchor=west] (website) at (21.08mm, \the\paperheight-182.78mm) {\usebeamerfont{tuhh website}tuhh.de};
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-117.5mm){\usebeamerfont{signature} Hamburg University of Technology (TUHH)};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-121.5mm){\usebeamerfont{signature} \insertauthor};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-125.5mm){\usebeamerfont{signature} \insertinstitute};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-129.5mm){\usebeamerfont{signature} Am Schwarzenberg-Campus 1};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-133.5mm){\usebeamerfont{signature} 21073 Hamburg};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-137.5mm){\usebeamerfont{signature} Tel.: +49 40 42878-3330};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-141.5mm){\usebeamerfont{signature} www.tuhh.de};
+
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-10.99mm-44.22mm) {\usebeamerfont{thank you} Thank You very much};
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        \node[outer sep=0, inner sep=0] (tuhh_logo) at (250.83mm, \the\paperheight-72.48mm) {\includegraphics[width=210.53mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+
+        \node[rectangle,
+              draw,
+              line width = 1pt,
+              minimum width = 327.91mm,
+              minimum height = 179.99mm,
+              outer sep = 5.34mm,
+              anchor = south west,
+              ] at (0, 0) {};
+
+        \draw[line width = 1pt] (169.33mm, \the\paperheight-5.25mm) -- (169.33mm, \the\paperheight-5.25mm-180.00mm) {};
+        \draw[line width = 1pt] (5.34mm, \the\paperheight-71.04mm) -- (5.34mm+163.99mm, \the\paperheight-71.04mm) {};
+        \draw[line width = 1pt] (5.34mm, \the\paperheight-147.24mm) -- (5.34mm+163.99mm, \the\paperheight-147.24mm) {};
+        \draw[line width = 1pt] (131.37mm, \the\paperheight-71.04mm) -- (131.37mm, \the\paperheight-71.04mm-114.21mm) {};
+        \draw[line width = 1pt] (131.37mm, \the\paperheight-109.27mm) -- (131.37mm+37.96mm, \the\paperheight-109.27mm) {};
+
+        %1st circle
+        \draw[line width = 1pt] (131.37mm+18.99mm, \the\paperheight-71.04mm-18.99mm) circle (18.99mm);
+        %1nd circle
+        \draw[line width = 1pt] (131.37mm+18.99mm, \the\paperheight-109.18mm-18.99mm) circle (18.99mm);
+        %3rd circle
+        \draw[line width = 1pt] (131.37mm+18.99mm, \the\paperheight-147.33mm-18.99mm) circle (18.99mm);
+
+        %red circles
+        \usebeamercolor{tuhh slideRed}
+        %e
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm-9.495mm-1.25mm, \the\paperheight-147.33mm-18.99mm) circle (2mm);
+        %ne
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm-7.59786236mm, \the\paperheight-147.33mm-18.99mm+7.59786236mm) circle (2mm);
+        %n
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm, \the\paperheight-147.33mm-18.99mm+9.495mm+1.25mm) circle (2mm);
+        %nw
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm+7.59786236mm, \the\paperheight-147.33mm-18.99mm+7.59786236mm) circle (2mm);
+        %w
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm+9.495mm+1.25mm, \the\paperheight-147.33mm-18.99mm) circle (2mm);
+        %sw
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm-7.59786236mm, \the\paperheight-147.33mm-18.99mm-7.59786236mm) circle (2mm);
+        %s
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm, \the\paperheight-147.33mm-18.99mm-9.495mm-1.25mm) circle (2mm);
+        %sw
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm+7.59786236mm, \the\paperheight-147.33mm-18.99mm-7.59786236mm) circle (2mm);
+        %purple circle
+        \usebeamercolor{tuhh slideViolet}
+        \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm, \the\paperheight-147.33mm-18.99mm) circle (2.5mm);
+      \end{beamercolorbox}%
+    \end{tikzpicture}
+    }
+    
+    \begin{frame}
+    \end{frame}
+  }
+}
+
 \mode
 <all>
