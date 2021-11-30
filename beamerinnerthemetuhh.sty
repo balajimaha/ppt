@@ -81,12 +81,13 @@
         \draw (87.31mm, \the\paperheight-118.80mm) -- (87.31mm+40.96mm, \the\paperheight-118.80mm-23.72mm) {};
         \draw (128.27mm, \the\paperheight-118.80mm-23.72mm) -- (128.27mm+40.96mm, \the\paperheight-118.80mm) {};
 
+        \usebeamercolor{tuhh slideRed}
         % First Red Circle
-        \draw[red,fill=red] (126.96mm+1.325mm, \the\paperheight-93.93mm-1.325mm) circle (1.325mm);
+        \draw[red,fill=fg] (126.96mm+1.325mm, \the\paperheight-93.93mm-1.325mm) circle (1.325mm);
         % Second Red Circle
-        \draw[red,fill=red] (126.96mm+1.325mm, \the\paperheight-117.48mm-1.325mm) circle (1.325mm);
+        \draw[red,fill=fg] (126.96mm+1.325mm, \the\paperheight-117.48mm-1.325mm) circle (1.325mm);
         % Third Red Circle
-        \draw[red,fill=red] (126.96mm+1.325mm, \the\paperheight-141.20mm-1.325mm) circle (1.325mm);
+        \draw[red,fill=fg] (126.96mm+1.325mm, \the\paperheight-141.20mm-1.325mm) circle (1.325mm);
       \end{beamercolorbox}%
       \fi
   \end{tikzpicture}
@@ -95,7 +96,7 @@
 % Title page
 \defbeamertemplate*{title page}{tuhh}[1][]
 { 
-    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=66.30mm,#1]{title page header}
+    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=66.32mm,#1]{title page header}
       \usebeamerfont{title}\inserttitle%
     \end{beamercolorbox}%
     \begin{beamercolorbox}[wd=1mm,ht=14mm,#1]{title page header}
