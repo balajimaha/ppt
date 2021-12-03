@@ -9,20 +9,24 @@
       \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
       %date
        \node[rectangle,
-        minimum width = 30.76 mm,
-        minimum height = 4.97 mm,
+        minimum width = 32.10mm,
+        minimum height = 15.99 mm,
+        text width = 32.10mm,
+        align=center,
         outer sep = 0mm,
         inner sep = 0.0mm,
         anchor = west,
-        ] at (301.7 mm, \the\paperheight-185.27 mm) {\usebeamerfont{date_small} \insertdate};
+        ] at (301.22mm, \the\paperheight-5.24mm-180.00mm) {\usebeamerfont{date_small}\insertdate};
       %slide number
       \node[rectangle,
-        minimum width = 16.12mm,
+        minimum width = 32.10mm,
         minimum height = 4.0mm,
+        text width = 32.10mm,
+        align=center,
         outer sep = 0mm,
         inner sep = 0.0mm,
         anchor = west,
-        ] at (309.0mm, \the\paperheight-140.26mm) {\usebeamerfont{frame_number} \insertframenumber};
+        ] at (301.22mm, \the\paperheight-140.26mm) {\usebeamerfont{frame_number}\insertframenumber};
 
       \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[rectangle,
