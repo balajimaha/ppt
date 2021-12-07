@@ -13,11 +13,10 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 **We are happy for any input we can get!**
 
 # How to use it:
-- Just clone this repository to you presentation directory and select the `tuhh_presentation` class in your main `.tex` file.  
-- Use the `\titlepage` command to create the title page.  
-- Use the `\finalpage` command to create the end page.  
-- Use `\date`, `\author`, `\institute` and `\telephonenumber` for meta data.  
-- You can find an example on how to use this class in the `demo_tuhh_presentation.tex` file.
+1. Clone the repository
+2. Use `demo_tuhh_presentation.tex` as a starting point
+3. Adapt meta-data such as `\date`, `\author`, `\institute`, `\telephonenumber`
+4. Add your own slides
 
 
 # What you can expect:
