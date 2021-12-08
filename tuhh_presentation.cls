@@ -5,6 +5,7 @@
 \LoadClass{beamer}
 
 \usetheme{tuhh}
+\setbeamertemplate{caption}[numbered]
 
 \usepackage{.poppins_font/poppins}
 \pdfmapfile{+.poppins_font/Poppins.map}
