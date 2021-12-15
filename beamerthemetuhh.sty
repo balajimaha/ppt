@@ -61,6 +61,28 @@
   \end{frame}
 }
 
+% Renew TOC command to indent it to the grey rectangle
+\let\oldTableOfContents\tableofcontents
+\renewcommand*{\tableofcontents}{
+  \begin{minipage}{98.99mm}
+    \hfill
+  \end{minipage}
+  \begin{minipage}[c][137.74mm]{0.4\textwidth}
+    \oldTableOfContents
+  \end{minipage}
+}
+
+% Add section numbers to TOC
+\setbeamertemplate{section in toc}{\makebox[0.5em][c]{\inserttocsectionnumber}.~\inserttocsection}
+
+% Adjust TOC entry spacing
+\makeatletter
+\patchcmd{\beamer@sectionintoc}
+  {\vfill}
+  {\vskip 1em}
+  {}
+  {}
+
 % Finalpage definition
 \makeatletter
 \define@key{beamerframe}{agenda}[true]{%
