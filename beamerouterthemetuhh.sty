@@ -12,5 +12,26 @@
     \end{beamercolorbox}%
 }
 
+% Title page content title
+\defbeamertemplate*{titlepage}{}[1][]
+{
+    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=66.32mm,#1]{title page header}
+        \usebeamerfont{title}\inserttitle%
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=1mm,ht=14mm,#1]{title page header}
+        % Margin Placeholder
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[leftskip=114.285mm,wd=550mm,#1]{title page header}
+        \usebeamerfont{date}\DTMsetdatestyle{ddmmyyyy}\insertdate
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[wd=1mm,ht=12mm,#1]{title page header}
+        % Margin Placeholder
+      \end{beamercolorbox}%
+      \begin{beamercolorbox}[leftskip=21.336mm,wd=550mm,#1]{title page header}
+        \usebeamerfont{author}\insertauthor
+      \end{beamercolorbox}%
+}
+
+
 \mode
 <all>

@@ -14,10 +14,6 @@
 
 \AtBeginDocument{\usebeamerfont{normal text}}
 
-\newcommand{\finalpage}{
-    \usebeamertemplate{endpage}
-}
-
 \def\telephonenumber{\@dblarg\beamer@telephonenumber}
 \long\def\beamer@telephonenumber[#1]#2{%
   \def\inserttelephonenumber{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%

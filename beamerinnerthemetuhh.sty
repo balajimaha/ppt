@@ -1,42 +1,46 @@
 \mode<presentation>
 
-\setbeamertemplate{background}{
-  \begin{tikzpicture}
-    \ifnum\thepage>1\relax%
-    \begin{beamercolorbox}{tuhh teal}
-      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-      \node[outer sep=0, inner sep=0] (tuhh_logo) at (309.42mm+7.91mm, \the\paperheight-28.05mm) {\includegraphics[width=25.82mm]{.theme_imgs/TUHH_logo_rgb.pdf}};
-      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-      %date
-       \node[rectangle,
-        minimum width = 32.10mm,
-        minimum height = 15.99 mm,
-        text width = 32.10mm,
-        align=center,
-        outer sep = 0mm,
-        inner sep = 0.0mm,
-        anchor = west,
-        ] at (301.22mm, \the\paperheight-5.24mm-180.00mm) {\usebeamerfont{date_small}\insertdate};
-      %slide number
-      \node[rectangle,
-        minimum width = 32.10mm,
-        minimum height = 4.0mm,
-        text width = 32.10mm,
-        align=center,
-        outer sep = 0mm,
-        inner sep = 0.0mm,
-        anchor = west,
-        ] at (301.22mm, \the\paperheight-140.26mm) {\usebeamerfont{frame_number}\insertframenumber};
+\defbeamertemplate{content_frame}{tuhh}[1][]{
+  \usebeamertemplate{content_frame_background}
+}
 
-      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+\defbeamertemplate*{content_frame_background}{tuhh}[1][]{
+  \setbeamertemplate{background}{
+    \begin{tikzpicture}
+      \begin{beamercolorbox}{tuhh teal}
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        \node[outer sep=0, inner sep=0] (tuhh_logo) at (309.42mm+7.91mm, \the\paperheight-28.05mm) {\includegraphics[width=25.82mm]{.theme_imgs/TUHH_logo_rgb.pdf}};
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        %date
         \node[rectangle,
-              draw,
-              line width = 1pt,
-              minimum width = 327.91mm,
-              minimum height = 179.99mm,
-              outer sep = 5.34mm,
-              anchor = south west,
-              ] at (0, 0) {};
+          minimum width = 32.10mm,
+          minimum height = 15.99 mm,
+          text width = 32.10mm,
+          align=center,
+          outer sep = 0mm,
+          inner sep = 0.0mm,
+          anchor = west,
+          ] at (301.22mm, \the\paperheight-5.24mm-180.00mm) {\usebeamerfont{date_small}\insertdate};
+        %slide number
+        \node[rectangle,
+          minimum width = 32.10mm,
+          minimum height = 4.0mm,
+          text width = 32.10mm,
+          align=center,
+          outer sep = 0mm,
+          inner sep = 0.0mm,
+          anchor = west,
+          ] at (301.22mm, \the\paperheight-140.26mm) {\usebeamerfont{frame_number}\insertframenumber};
+
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+          \node[rectangle,
+                draw,
+                line width = 1pt,
+                minimum width = 327.91mm,
+                minimum height = 179.99mm,
+                outer sep = 5.34mm,
+                anchor = south west,
+                ] at (0, 0) {};
 
         %upper horz 1
         \draw[line width = 1pt] (5.33mm, \the\paperheight-37.26mm) -- (5.33mm+295.89mm,\the\paperheight-37.26mm) {};
@@ -49,10 +53,17 @@
         %first vert
         \draw[line width = 1pt] (301.22mm, \the\paperheight-5.24mm) -- (301.22mm, \the\paperheight-5.24mm-180.00mm) {};
       \end{beamercolorbox}%
-    \fi
+    \end{tikzpicture}
+  }
+}
 
-    % First page is always landing page
-    \ifnum\thepage<2\relax%
+
+
+% Title page
+\defbeamertemplate*{titlepage_frame}{tuhh}[1][]
+{
+  \setbeamertemplate{background}{
+    \begin{tikzpicture}
       % TUHH Logo
       \node[outer sep=0, inner sep=0] (tuhh_logo) at (19.07mm+25.875mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=73.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
       % TUHH Building A
@@ -93,32 +104,13 @@
         % Third Red Circle
         \draw[fg,fill=fg] (126.96mm+1.325mm, \the\paperheight-141.20mm-1.325mm) circle (1.325mm);
       \end{beamercolorbox}%
-      \fi
-  \end{tikzpicture}
+   \end{tikzpicture}
+  }
 }
 
-% Title page
-\defbeamertemplate*{title page}{tuhh}[1][]
-{ 
-    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=66.32mm,#1]{title page header}
-      \usebeamerfont{title}\inserttitle%
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=1mm,ht=14mm,#1]{title page header}
-      % Margin Placeholder
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[leftskip=114.285mm,wd=550mm,#1]{title page header}
-      \usebeamerfont{date}\DTMsetdatestyle{ddmmyyyy}\insertdate
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=1mm,ht=12mm,#1]{title page header}
-      % Margin Placeholder
-    \end{beamercolorbox}%
-    \begin{beamercolorbox}[leftskip=21.336mm,wd=550mm,#1]{title page header}
-      \usebeamerfont{author}\insertauthor
-    \end{beamercolorbox}%
-}
 
-\setbeamertemplate{endpage}{
-  {\setbeamertemplate{background}
+\defbeamertemplate*{endpage_frame}{tuhh}[1][]{
+  \setbeamertemplate{background}
     {
     \begin{tikzpicture}
       \begin{beamercolorbox}{tuhh teal}
@@ -183,10 +175,6 @@
         \draw[fg,line width = 1pt,fill=fg] (131.37mm+18.99mm, \the\paperheight-147.33mm-18.99mm) circle (2.5mm);
       \end{beamercolorbox}%
     \end{tikzpicture}
-    }
-    
-    \begin{frame}
-    \end{frame}
   }
 }
 
