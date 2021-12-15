@@ -14,6 +14,8 @@
 \setbeamersize{text margin left  = 21.30mm, 
                text margin right = 61.67mm} 
 
+\usebeamercolor{tuhh teal}\definecolor{tuhhTeal}{named}{fg}
+
 \setbeamertemplate{navigation symbols}{}
 
 \let\oldItemize\itemize
@@ -103,4 +105,21 @@
   \usebeamertemplate{content_frame}%
   }
 \makeatother
+
+% This rule is executed, if footnotes are present.
+\renewcommand\footnoterule{
+  \moveleft 15.96 mm %21.30mm- 5.34mm
+  \vbox{
+    \textcolor{tuhhTeal}{
+      \rule{\dimexpr \textwidth+61.67mm-5.24mm-5.24mm-5.24mm-5.24mm-0.5mm}{1pt}
+    }
+  \vskip -0.9em
+  }
+}
+
+% The footline is the lowest element in a frame, we can therfore use it to "shift" footnote entries.
+\setbeamertemplate{footline}{
+    \vspace{2em}
+}
+
 \mode<all>
