@@ -18,3 +18,9 @@
 \long\def\beamer@telephonenumber[#1]#2{%
   \def\inserttelephonenumber{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
 }
+
+\def\closingstatement{\@dblarg\beamer@closingstatement}
+\long\def\beamer@closingstatement[#1]#2{%
+  \def\insertclosingstatement{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
+}
+\closingstatement{Thank You very much}
