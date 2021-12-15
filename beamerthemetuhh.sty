@@ -91,5 +91,11 @@
   }
 \makeatother
 
-
+% Plain page definition
+\makeatletter
+\define@key{beamerframe}{plain}[true]{%
+  \setbeamertemplate{content_frame}{\usebeamertemplate{plain_background}}
+  \usebeamertemplate{content_frame}%
+  }
+\makeatother
 \mode<all>
