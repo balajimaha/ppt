@@ -2,6 +2,7 @@
 
 % Requirement
 \RequirePackage{tikz}
+\RequirePackage{enumitem}
 
 % Settings
 \useinnertheme{tuhh}
@@ -15,13 +16,15 @@
 
 \setbeamertemplate{navigation symbols}{}
 
-\setbeamertemplate{itemize items}{\raisebox{0.4ex}{\footnotesize$\bullet$}}
-\setbeamertemplate{itemize/enumerate subbody beginn}{\vspace{2mm}}
-\setbeamertemplate{itemize/enumerate subbody end}{\vspace{-2mm}}
+\let\oldItemize\itemize
+\let\oldItemizeEnd\enditemize
+\renewenvironment{itemize}{\oldItemize\addtolength{\itemsep}{1.5mm}}{\oldItemizeEnd}
 
-\let\tempone\itemize
-\let\temptwo\enditemize
-\renewenvironment{itemize}{\tempone\addtolength{\itemsep}{1.5mm}}{\temptwo}
+\let\oldEnumerate\enumerate
+\let\oldEnumerateEnd\endenumerate
+\renewenvironment{enumerate}{\oldEnumerate\addtolength{\itemsep}{1.5mm}}{\oldEnumerateEnd}
 
+\setlist[enumerate]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}.}
+\setlist[itemize]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}}
 
 \mode<all>

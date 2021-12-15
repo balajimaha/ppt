@@ -18,8 +18,6 @@
     \usebeamertemplate{endpage}
 }
 
-\settowidth{\leftmargini}{\usebeamertemplate{itemize item}}
-
 \def\telephonenumber{\@dblarg\beamer@telephonenumber}
 \long\def\beamer@telephonenumber[#1]#2{%
   \def\inserttelephonenumber{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
