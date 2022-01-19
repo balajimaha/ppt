@@ -26,6 +26,7 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 - Main font specification
 - Use of TUHH color schemes
 - Foot notes
+- Stylized TOC slide
 
 
 # What you can (currently) **not** expect:
