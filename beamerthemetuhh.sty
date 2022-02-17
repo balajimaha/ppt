@@ -73,12 +73,12 @@
 
 % Renew TOC command to indent it to the grey rectangle
 \let\oldTableOfContents\tableofcontents
-\renewcommand*{\tableofcontents}{
+\renewcommand*{\tableofcontents}[1][]{%
   \begin{minipage}{98.99mm}
     \hfill
   \end{minipage}
   \begin{minipage}[c][137.74mm]{0.60\textwidth}
-    \oldTableOfContents
+    \oldTableOfContents[#1]
   \end{minipage}
 }
 
