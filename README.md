@@ -27,7 +27,7 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 - Use of TUHH color schemes
 - Foot notes
 - Stylized TOC slide
-
+- Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/utilities/tuhh_latex_presentation/-/snippets)
 
 # What you can (currently) **not** expect:
 - Section slides
