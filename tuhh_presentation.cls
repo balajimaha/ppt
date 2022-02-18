@@ -23,4 +23,11 @@
 \long\def\beamer@closingstatement[#1]#2{%
   \def\insertclosingstatement{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
 }
+
+\LetLtxMacro\latexincludegraphics\includegraphics
+\renewcommand{\includegraphics}[2][]{%
+  \textcolor{black}%
+  {\latexincludegraphics[#1]{#2}}%
+}
+
 \closingstatement{Thank You very much}
