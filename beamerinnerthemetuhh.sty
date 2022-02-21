@@ -193,10 +193,11 @@
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-117.5mm){\usebeamerfont{signature} Hamburg University of Technology (TUHH)};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-121.5mm){\usebeamerfont{signature} \insertshortauthor};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-125.5mm){\usebeamerfont{signature} \insertinstitute};
-        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-129.5mm){\usebeamerfont{signature} Am Schwarzenberg-Campus 1};
-        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-133.5mm){\usebeamerfont{signature} 21073 Hamburg};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-129.5mm){\usebeamerfont{signature} \insertstreet};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-133.5mm){\usebeamerfont{signature} \insertcity};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-137.5mm){\usebeamerfont{signature} Tel.: \inserttelephonenumber};
-        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-141.5mm){\usebeamerfont{signature} www.tuhh.de};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-141.5mm){\usebeamerfont{signature} \insertemail};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-145.5mm){\usebeamerfont{signature} \insertwebsite };
 
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-10.99mm-44.22mm) {\usebeamerfont{thank you} \insertclosingstatement};
