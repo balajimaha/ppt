@@ -2,6 +2,7 @@
 
 % Requirement
 \RequirePackage{tikz}
+\RequirePackage{tikzpagenodes}
 \RequirePackage{enumitem}
 
 % Settings
@@ -136,5 +137,11 @@
 \def\checkforcustomdate{\ifx\next\bgroup\expandafter\parsecustomdate\else\oldDate\tempdate\fi}% If we only have one argument, then pass it directly to \date, otherwise ...
 \def\parsecustomdate#1#2{\oldDate{\DTMdate{#2-#1-\tempdate}}}% try to read in three arguments and construct {dd}{mm}{yyyy} datetime input for \date
 \makeatother
+
+\newcommand\slideimg[1]{%
+  \begin{tikzpicture}[remember picture,overlay,shift={(current page.center)}]
+    \node[anchor=center,xshift=-16.1mm,yshift=-16mm]{\includegraphics[width=295.29mm,height=147.4mm,keepaspectratio]{#1}};
+  \end{tikzpicture}
+} 
 
 \mode<all>
