@@ -7,7 +7,7 @@ Furthermore, LaTeX and in particular Beamer templates are complex, convoluted an
 Since we do not have any professional background in LaTeX template design, bugs, inconsistencies and errors might very well occur.
 
 Over the course of this project, we strive to implement all Powerpoint template features, improve consistency and fix reported template errors.  
-However, even at this early stage, we are confident that the provided document class is able to typeset **simple** TUHH-styled presentations.   
+However, even at this early stage, we are confident that the provided document class is able to typeset TUHH-styled presentations.   
 If you'd like to contribute, feel free to contact us, open issues, or implement features and create merge request.  
 
 **We are happy for any input we can get!**
@@ -23,18 +23,20 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 - A title slide with author, date and title placement
 - A default content slide, with slide number, title and date placement
 - Integration of custom Poppins font for pdflatex
-- Main font specification
 - Use of TUHH color schemes
 - Foot notes
 - Stylized TOC slide
+- End slide with author contact details
 - Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/utilities/tuhh_latex_presentation/-/snippets)
 
+
 # What you can (currently) **not** expect:
-- Section slides
+- Design slides separating different sections
 - Stylized tables
-- Stability
 - Long-term compatibility
-- 100% typesetting (we are working on correct spacings, right now)
+- Perfect typesetting (inconsistent spacing might still occur)
+- Installation using CTAN
+
 
 # How to contribute:
 Feel free to contact the current maintainer at `leonard.fisser@tuhh.de`.  
