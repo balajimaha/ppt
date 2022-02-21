@@ -14,7 +14,6 @@
 
 \AtBeginDocument{\usebeamerfont{normal text}}
 
-
 \def\street{\@dblarg\beamer@street}
 \long\def\beamer@street[#1]#2{%
   \def\insertstreet{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%

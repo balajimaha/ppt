@@ -130,4 +130,11 @@
     \vspace{2em}
 }
 
+\let\oldDate\date
+\makeatletter
+\renewcommand{\date}[2][]{\def\tempdate{#2}\futurelet\next\checkforcustomdate}% Save first argument, then call...
+\def\checkforcustomdate{\ifx\next\bgroup\expandafter\parsecustomdate\else\oldDate\tempdate\fi}% If we only have one argument, then pass it directly to \date, otherwise ...
+\def\parsecustomdate#1#2{\oldDate{\DTMdate{#2-#1-\tempdate}}}% try to read in three arguments and construct {dd}{mm}{yyyy} datetime input for \date
+\makeatother
+
 \mode<all>
