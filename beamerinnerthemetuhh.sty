@@ -9,12 +9,12 @@
     \begin{tikzpicture}
       \begin{beamercolorbox}{tuhh teal}
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \node[outer sep=0, inner sep=0] (tuhh_logo) at (309.42mm+7.91mm, \the\paperheight-28.05mm) {\includegraphics[width=25.82mm]{.theme_imgs/TUHH_logo_rgb.pdf}};
+        \node[outer sep=0, inner sep=0, anchor=center] (tuhh_logo) at (\the\paperwidth-5.34mm-16.05mm, \the\paperheight-16.05mm-12.91mm) {\includegraphics[width=25.82mm]{\frameicon}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         %date
         \node[rectangle,
           minimum width = 32.10mm,
-          minimum height = 15.99 mm,
+          minimum height = 15.99mm,
           text width = 32.10mm,
           align=center,
           outer sep = 0mm,
@@ -49,7 +49,7 @@
         %mid horz 1
         \draw[line width = 1pt] (301.22mm, \the\paperheight-95.25mm) -- (301.22mm+32.10mm, \the\paperheight-95.25mm) {};
         %lower horz 1
-        \draw[line width = 1pt] (301.22mm, \the\paperheight-169.25 mm) -- (301.22mm+32.10mm, \the\paperheight-169.25 mm) {};
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-169.25mm) -- (301.22mm+32.10mm, \the\paperheight-169.25mm) {};
         %first vert
         \draw[line width = 1pt] (301.22mm, \the\paperheight-5.24mm) -- (301.22mm, \the\paperheight-5.24mm-180.00mm) {};
       \end{beamercolorbox}%
@@ -76,18 +76,18 @@
           outer sep = 0mm,
           inner sep = 0.0mm,
           anchor = north west,
-          ] at (103.33 mm, \the\paperheight-7.91mm-5mm) {};
+          ] at (103.33mm, \the\paperheight-7.91mm-5mm) {};
           \usebeamercolor{tuhh teal}
         \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-15.99mm-44.22mm) {\usebeamerfont{title} Agenda:};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[outer sep=0, inner sep=0] (tuhh_logo) at (5.29mm+29.755mm, \the\paperheight-122.41mm-25.815mm) {\includegraphics[width=59.51mm]{.theme_imgs/TUHH_agenda_icon.pdf}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \node[outer sep=0, inner sep=0] (tuhh_logo) at (309.42mm+7.91mm, \the\paperheight-28.05mm) {\includegraphics[width=25.82mm]{.theme_imgs/TUHH_logo_rgb.pdf}};
+        \node[outer sep=0, inner sep=0, anchor=center] (tuhh_logo) at (\the\paperwidth-5.34mm-16.05mm, \the\paperheight-16.05mm-12.91mm) {\includegraphics[width=25.82mm]{\frameicon}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         %date
         \node[rectangle,
           minimum width = 32.10mm,
-          minimum height = 15.99 mm,
+          minimum height = 15.99mm,
           text width = 32.10mm,
           align=center,
           outer sep = 0mm,
@@ -120,7 +120,7 @@
         %mid horz 2
         \draw[line width = 1pt] (5.34mm, \the\paperheight-95.25mm) -- (5.34mm+97.98mm, \the\paperheight-95.25mm) {};
         %lower horz 1
-        \draw[line width = 1pt] (301.22mm, \the\paperheight-169.25 mm) -- (301.22mm+32.10mm, \the\paperheight-169.25 mm) {};
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-169.25mm) -- (301.22mm+32.10mm, \the\paperheight-169.25mm) {};
         %first vert
         \draw[line width = 1pt] (301.22mm, \the\paperheight-5.24mm) -- (301.22mm, \the\paperheight-5.24mm-180.00mm) {};
         %second vert
@@ -132,14 +132,13 @@
   
 }
 
-
 % Title page
 \defbeamertemplate*{titlepage_frame}{tuhh}[1][]
 {
   \setbeamertemplate{background}{
     \begin{tikzpicture}
       % TUHH Logo
-      \node[outer sep=0, inner sep=0] (tuhh_logo) at (19.07mm+25.875mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=73.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+      \node[outer sep=0, inner sep=0, anchor=west] (tuhh_logo) at (21.30mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=53.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
       % TUHH Building A
       \node[outer sep=0, inner sep=0pt] at (178.816mm+72.75mm, \the\paperheight-104.902mm-23.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.pdf}};
 
@@ -158,8 +157,8 @@
         \draw[line width = 1pt] (5.33mm, \the\paperheight-95.25mm) -- (5.33mm+328.00mm, \the\paperheight-95.25mm) {};
         \draw[line width = 1pt] (5.33mm, \the\paperheight-160.51mm) -- (5.33mm+328.00mm, \the\paperheight-160.51mm) {};
         \draw[line width = 1pt] (87.31mm, \the\paperheight-95.25mm) -- (87.31mm, \the\paperheight-95.25mm-65.26mm) {};
-        \draw[line width = 1pt] (87.31mm, \the\paperheight-142.52mm) -- (87.31mm+81.93 mm, \the\paperheight-142.52mm) {};
-        \draw[line width = 1pt] (87.31mm, \the\paperheight-118.80mm) -- (87.31mm+81.93 mm, \the\paperheight-118.80mm) {};
+        \draw[line width = 1pt] (87.31mm, \the\paperheight-142.52mm) -- (87.31mm+81.93mm, \the\paperheight-142.52mm) {};
+        \draw[line width = 1pt] (87.31mm, \the\paperheight-118.80mm) -- (87.31mm+81.93mm, \the\paperheight-118.80mm) {};
         \draw[line width = 1pt] (128.27mm, \the\paperheight-95.25mm) -- (128.27mm, \the\paperheight-95.25mm-47.27mm) {};
 
         % First triangle
@@ -182,6 +181,70 @@
   }
 }
 
+% Title page
+\defbeamertemplate*{branded_titlepage_frame}{tuhh}[1][]
+{
+  \setbeamertemplate{background}{
+    \begin{tikzpicture}
+      % TUHH Wordmark
+      \node[outer sep=0, inner sep=0, anchor=west] (tuhh_logo) at (128.27mm-53.75mm-9.535mm-5.34mm, \the\paperheight-109.93mm-11.923mm) {\includegraphics[height=32.925mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+      % Institute Wordmark 
+      \node[outer sep=0, inner sep=0, anchor=west] (tuhh_institute_wordmark) at (9.535mm+5.34mm+5.34mm, \the\paperheight-109.93mm-11.923mm) {\includegraphics[height=32.925mm]{\titlepageicon}};
+      % TUHH Building A
+      \node[outer sep=0, inner sep=0pt] at (178.816mm+72.75mm, \the\paperheight-104.902mm-23.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.pdf}};
+      \usebeamercolor{tuhh teal}
+      \draw[line width = 1pt, fg,fill=fg] (9.535mm+5.34mm, \the\paperheight-144.195mm) -- (128.27mm-9.535mm, \the\paperheight-144.195mm) {};
+      \node[outer sep=0, inner sep=0pt, fg] at (66.805mm, \the\paperheight-144.195mm-16pt) {\insertinstitute};
+
+      \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+      \begin{beamercolorbox}{tuhh teal}
+        \node[rectangle,
+              draw,
+              line width = 1pt,
+              minimum width = 327.91mm,
+              minimum height = 179.99mm,
+              outer sep = 5.34mm,
+              anchor = south west,
+              ] at (0, 0) {};
+
+        \draw[line width = 1pt] (169.25mm, \the\paperheight-5.24mm) -- (169.25mm, \the\paperheight-5.24mm-180.00mm) {};
+        \draw[line width = 1pt] (5.33mm, \the\paperheight-95.25mm) -- (5.33mm+328.00mm, \the\paperheight-95.25mm) {};
+        \draw[line width = 1pt] (5.33mm, \the\paperheight-160.51mm) -- (5.33mm+328.00mm, \the\paperheight-160.51mm) {};
+        \draw[line width = 1pt] (128.27mm, \the\paperheight-95.25mm) -- (128.27mm, \the\paperheight-5.24mm-180.00mm) {};
+
+        \draw[line width = 1pt] (148.76mm, \the\paperheight-95.25mm) -- (148.76mm, \the\paperheight-95.25mm-65.26mm) {};
+        \draw[line width = 1pt] (128.27mm, \the\paperheight-95.25mm-32.63mm) -- (169.25mm, \the\paperheight-95.25mm-32.63mm) {};
+        %\draw[line width = 1pt] (87.31mm, \the\paperheight-142.52mm) -- (87.31mm+81.93mm, \the\paperheight-142.52mm) {};
+        %\draw[line width = 1pt] (87.31mm, \the\paperheight-118.80mm) -- (87.31mm+81.93mm, \the\paperheight-118.80mm) {};
+        %\draw[line width = 1pt] (128.27mm, \the\paperheight-95.25mm) -- (128.27mm, \the\paperheight-95.25mm-47.27mm) {};
+
+        % First triangle
+        \draw[line width = 1pt] (148.76mm, \the\paperheight-95.25mm) -- (128.27mm, \the\paperheight-95.25mm-32.63mm) {};
+        \draw[line width = 1pt] (128.27mm, \the\paperheight-95.25mm-32.63mm) -- (148.76mm, \the\paperheight-95.25mm-65.26mm) {};
+
+        % Second triangle
+        \draw[line width = 1pt] (169.25mm, \the\paperheight-95.25mm) -- (148.76mm, \the\paperheight-95.25mm-32.63mm) {};
+        \draw[line width = 1pt] (148.76mm, \the\paperheight-95.25mm-32.63mm) -- (169.25mm, \the\paperheight-95.25mm-65.26mm) {};
+
+        \usebeamercolor{tuhh slideRed}
+        % First triangle first red circle
+        \draw[fg,fill=fg] (148.76mm, \the\paperheight-93.93mm-1.325mm) circle (1.325mm);
+        % First triangle second red circle
+        \draw[fg,fill=fg] (128.27mm, \the\paperheight-127.88mm) circle (1.325mm);
+        % First triangle third red circle
+        \draw[fg,fill=fg] (148.76mm, \the\paperheight-95.25mm-65.26mm) circle (1.325mm);
+        % Second triangle first red circle
+        \draw[fg,fill=fg] (169.25mm, \the\paperheight-93.93mm-1.325mm) circle (1.325mm);
+        % Second triangle second red circle
+        \draw[fg,fill=fg] (148.76mm, \the\paperheight-127.88mm) circle (1.325mm);
+        % Second triangle third red circle
+        \draw[fg,fill=fg] (169.25mm, \the\paperheight-95.25mm-65.26mm) circle (1.325mm);
+        % Second triangle second red circle
+        \draw[fg,fill=fg] (169.25mm, \the\paperheight-127.88mm) circle (1.325mm);
+      \end{beamercolorbox}%
+   \end{tikzpicture}
+  }
+}
 
 \defbeamertemplate*{endpage_frame}{tuhh}[1][]{
   \setbeamertemplate{background}
@@ -202,7 +265,7 @@
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-10.99mm-44.22mm) {\usebeamerfont{thank you} \insertclosingstatement};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \node[outer sep=0, inner sep=0] (tuhh_logo) at (250.83mm, \the\paperheight-72.48mm) {\includegraphics[width=210.53mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+        \node[outer sep=0, inner sep=0, anchor=east] (tuhh_logo) at (\the\paperwidth-5.34mm-9.535mm, \the\paperheight-72.48mm) {\includegraphics[width=136.53mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
 
         \node[rectangle,
