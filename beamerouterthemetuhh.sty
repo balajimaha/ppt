@@ -45,18 +45,31 @@
 % Title page content title
 \defbeamertemplate*{branded_titlepage}{}[1][]
 {
-    \begin{beamercolorbox}[leftskip=0mm,wd=142.19mm,dp=66.32mm,ht=62mm,#1]{title page header}
-        \usebeamerfont{title}\inserttitle%
-      \end{beamercolorbox}%
-      \begin{beamercolorbox}[wd=1mm,ht=31mm,#1]{title page header}
-        % Margin Placeholder
-      \end{beamercolorbox}%
-      \begin{beamercolorbox}[leftskip=21.336mm,wd=550mm,#1]{title page header}
-        \usebeamerfont{author}\insertauthor
-        \begin{beamercolorbox}[ht=10mm,leftskip=74mm,wd=550mm,#1]{title page header}
-          \usebeamerfont{date}\DTMsetdatestyle{ddmmyyyy}\insertdate
-        \end{beamercolorbox}%
-      \end{beamercolorbox}%
+  \begin{tikzpicture}
+    \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+    % Title
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (0, \the\paperheight-48mm) {%
+      \parbox[c][40mm]{132.19mm}{%
+      \raggedright
+      \usebeamercolor{tuhh teal}\color{fg}%
+      \usebeamerfont{title}%
+      \inserttitle}%
+    };
+    % Date
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (91.33mm+20mm, \the\paperheight-165.19 mm-6.725mm) {%
+    \parbox[c][40mm]{132.19mm}{%
+    \usebeamercolor{tuhh teal}\color{fg}%
+    \usebeamerfont{date}%
+    \DTMsetdatestyle{ddmmyyyy}\insertdate}%
+      };
+    % Author
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (0mm, \the\paperheight-165.19 mm-6.725mm) {%
+    \parbox[c][40mm]{94mm}{%
+    \usebeamercolor{tuhh teal}\color{fg}%
+    \usebeamerfont{author}%
+    \insertauthor}%
+      };
+  \end{tikzpicture}
 }
 
 
