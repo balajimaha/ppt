@@ -38,6 +38,9 @@
   \setlist[itemize, 3]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, before*=\footnotesize }  
 }
 
+\newcommand{\tuhhwordmark}{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}% Titlepage definition
+\newcommand{\settuhhwordmark}[2][]{\renewcommand{\tuhhwordmark}{#2}}
+
 % A default frame should always use a content_frame background
 \BeforeBeginEnvironment{frame}{%
   \setbeamertemplate{content_frame}{\usebeamertemplate{content_frame_background}}

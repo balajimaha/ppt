@@ -1,9 +1,10 @@
 \ProvidesClass{tuhh_presentation}
 
+% First option pass to base class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 \ProcessOptions\relax
-\LoadClass{beamer}
 
+\LoadClass{beamer}
 \usetheme{tuhh}
 \setbeamertemplate{caption}[numbered]
 
@@ -13,6 +14,12 @@
 \usepackage[datesep=.,style=ddmmyy]{datetime2}
 
 \AtBeginDocument{\usebeamerfont{normal text}}
+
+
+\def\university{\@dblarg\beamer@university}
+\long\def\beamer@university[#1]#2{%
+  \def\insertuniversity{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
+}
 
 \def\street{\@dblarg\beamer@street}
 \long\def\beamer@street[#1]#2{%
@@ -51,7 +58,17 @@
 }
 
 % Defaults
+\university{Hamburg University of Technology (TUHH)}
 \closingstatement{Thank You very much}
 \street{Am Schwarzenberg-Campus 1}
 \city{21073 Hamburg}
 \website{www.tuhh.de}
+
+\DeclareOption{german}{%
+  \closingstatement{Vielen Dank}%
+  \university{Technische Universität Hamburg (TUHH)}%
+  \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
+}
+
+% Second option pass to derived class
+\ProcessOptions\relax

@@ -139,9 +139,8 @@
   \setbeamertemplate{background}{
     \begin{tikzpicture}
       % TUHH Logo
-      \node[outer sep=0, inner sep=0] (tuhh_logo) at (19.07mm+25.875mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[width=73.75mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
-      % TUHH Building A
-      \node[outer sep=0, inner sep=0pt] at (178.816mm+72.75mm, \the\paperheight-104.902mm-23.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.pdf}};
+      \node[outer sep=0, inner sep=0, anchor=west] (tuhh_logo) at (21.30mm, \the\paperheight-109.93mm-18.923mm) {\includegraphics[height=32.925mm]{\tuhhwordmark}};      
+      \node[outer sep=0, inner sep=0pt] at (178.816mm+72.75mm, \the\paperheight-104.902mm-23.177mm) {\includegraphics[width=148.59mm]{.theme_imgs/TUHH_building-a.pdf}}; % TUHH Building A
 
       \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
       \begin{beamercolorbox}{tuhh teal}
@@ -190,7 +189,7 @@
       \begin{beamercolorbox}{tuhh teal}
         \node[outer sep=0, inner sep=0, anchor=west] (website) at (21.08mm, \the\paperheight-188.78mm) {\usebeamerfont{tuhh website}tuhh.de};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-117.5mm){\usebeamerfont{signature} Hamburg University of Technology (TUHH)};
+        \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-117.5mm){\usebeamerfont{signature} \insertuniversity};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-121.5mm){\usebeamerfont{signature} \insertshortauthor};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-125.5mm){\usebeamerfont{signature} \insertinstitute};
         \node[outer sep=0, inner sep=0, anchor=west, text width=8cm] (signature) at (19.08mm, \the\paperheight-129.5mm){\usebeamerfont{signature} \insertstreet};
@@ -202,7 +201,7 @@
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-10.99mm-44.22mm) {\usebeamerfont{thank you} \insertclosingstatement};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
-        \node[outer sep=0, inner sep=0] (tuhh_logo) at (250.83mm, \the\paperheight-72.48mm) {\includegraphics[width=210.53mm]{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}};
+        \node[outer sep=0, inner sep=0, anchor=east] (tuhh_logo) at (\the\paperwidth-5.34mm-9.535mm, \the\paperheight-72.48mm) {\includegraphics[width=136.53mm]{\tuhhwordmark}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
 
         \node[rectangle,
