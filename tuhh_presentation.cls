@@ -63,6 +63,11 @@
 \street{Am Schwarzenberg-Campus 1}
 \city{21073 Hamburg}
 \website{www.tuhh.de}
+\telephonenumber{+49 40 42878-3330}
+\institute{Corresponding Authors Institute}
+\email{corresponding.author@tuhh.de}
+\author[Corresponding Author]{First Author, Second Author}
+
 
 \DeclareOption{german}{%
   \closingstatement{Vielen Dank}%
