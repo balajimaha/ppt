@@ -70,5 +70,15 @@
   \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
 }
 
+% Example
+\DeclareOption{institute}{%
+  \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
+}
+
+% Institute of Communication Networks (E4)
+\DeclareOption{e4}{%
+  \institutebranded{.theme_imgs/e4_logo_titlepage.pdf}{.theme_imgs/e4_logo_content.pdf}
+}
+
 % Second option pass to derived class
 \ProcessOptions\relax
