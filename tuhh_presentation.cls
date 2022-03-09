@@ -80,8 +80,13 @@
   \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
 }
 
-% Institute of Communication Networks (E4)
-\DeclareOption{e4}{%
+% Institute of Communication Networks (E-4)
+\DeclareOption{institute=e4}{%
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institut für Kommunikationsnetze}
+  }{
+    \institute{Institute of Communication Networks}
+  }
   \institutebranded{.theme_imgs/e4_logo_titlepage.pdf}{.theme_imgs/e4_logo_content.pdf}
 }
 
