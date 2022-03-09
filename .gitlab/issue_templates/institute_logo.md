@@ -14,4 +14,4 @@ Checklist:
     }
     ```
 - [ ] Checked correct document generation
-- [ ] Put the current maintainer as reviewer for this merge request
+- [ ] Assign this merge request to the current maintainer
