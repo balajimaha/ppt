@@ -76,7 +76,8 @@
 }
 
 % Example
-\DeclareOption{institute}{%
+\DeclareOption{institute=test}{%
+  \institute{Institute of Test Author}
   \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
 }
 
