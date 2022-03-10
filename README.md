@@ -28,7 +28,7 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 - Foot notes
 - Stylized TOC slide
 - End slide with author contact details
-- Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/utilities/tuhh_latex_presentation/-/snippets)
+- Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/snippets)
 
 # What you can (currently) **not** expect:
 - Design slides separating different sections
