@@ -42,6 +42,36 @@
   \end{tikzpicture}
 }
 
+% Title page content title
+\defbeamertemplate*{branded_titlepage}{}[1][]
+{
+  \begin{tikzpicture}
+    \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+    % Title
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (0, \the\paperheight-48mm) {%
+      \parbox[c][40mm]{132.19mm}{%
+      \raggedright
+      \usebeamercolor{tuhh teal}\color{fg}%
+      \usebeamerfont{title}%
+      \inserttitle}%
+    };
+    % Date
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (91.33mm+20mm, \the\paperheight-165.19 mm-6.725mm) {%
+    \parbox[c][40mm]{132.19mm}{%
+    \usebeamercolor{tuhh teal}\color{fg}%
+    \usebeamerfont{date}%
+    \DTMsetdatestyle{ddmmyyyy}\insertdate}%
+      };
+    % Author
+    \node[outer sep=0, inner sep=0, anchor=west] (title) at (0mm, \the\paperheight-165.19 mm-6.725mm) {%
+    \parbox[c][40mm]{94mm}{%
+    \usebeamercolor{tuhh teal}\color{fg}%
+    \usebeamerfont{author}%
+    \insertauthor}%
+      };
+  \end{tikzpicture}
+}
+
 
 \mode
 <all>

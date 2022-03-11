@@ -9,7 +9,7 @@ Checklist:
 - [ ] Added document class option and template configuration
     ```
     % Institute Name (x0)
-    DeclareOption{x0}{%
+    \DeclareOption{x0}{%
       \institutebranded{.theme_imgs/x0_logo_titlepage.pdf}{.theme_imgs/x0_logo_content.pdf}
     }
     ```

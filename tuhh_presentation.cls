@@ -75,5 +75,32 @@
   \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
 }
 
+% Example
+\DeclareOption{institute=test}{%
+  \institute{Institute of Test Author}
+  \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
+}
+
+% Institute of Communication Networks (E-4)
+\DeclareOption{institute=e4}{%
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institut für Kommunikationsnetze}
+  }{
+    \institute{Institute of Communication Networks}
+  }
+  \institutebranded{.theme_imgs/e4_logo_titlepage.pdf}{.theme_imgs/e4_logo_content.pdf}
+}
+
+% Institute of Mathematics (E-10)
+\DeclareOption{institute=e10}{%
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institut für Mathematik}
+  }{
+    \institute{Institute of Mathematics}
+  }
+  \institutebranded{.theme_imgs/e10_logo_titlepage.pdf}{.theme_imgs/e10_logo_content.pdf}
+}
+
+
 % Second option pass to derived class
 \ProcessOptions\relax
