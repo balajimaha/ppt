@@ -3,8 +3,11 @@ image: collaborating.tuhh.de:5005/e-4/utilities/docker-images/ci-latex
 build:
   stage: build
   script:
-    - pdflatex -interaction=nonstopmode demo_tuhh_presentation
-    - pdflatex -interaction=nonstopmode demo_tuhh_presentation
+    - latexmk -pdf demo_tuhh_presentation
+  environment:
+    name: demo_tuhh_presentation/$CI_COMMIT_REF_NAME
+    url: $CI_PROJECT_URL/-/jobs/$CI_JOB_ID/artifacts/raw/demo_tuhh_presentation.pdf
   artifacts:
     paths:
       - demo_tuhh_presentation.pdf
+
