@@ -91,5 +91,16 @@
   \institutebranded{.theme_imgs/e4_logo_titlepage.pdf}{.theme_imgs/e4_logo_content.pdf}
 }
 
+% Institute of Mathematics (E-10)
+\DeclareOption{institute=e10}{%
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institut für Mathematik}
+  }{
+    \institute{Institute of Mathematics}
+  }
+  \institutebranded{.theme_imgs/e10_logo_titlepage.pdf}{.theme_imgs/e10_logo_content.pdf}
+}
+
+
 % Second option pass to derived class
 \ProcessOptions\relax
