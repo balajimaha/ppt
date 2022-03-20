@@ -82,7 +82,11 @@
 
 % Example
 \DeclareOption{institute=test}{%
-  \institute{Institute of Test Author}
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institutsname auf Deutsch}
+  }{
+    \institute{Institute Name in English}
+  }
   \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
 }
 
