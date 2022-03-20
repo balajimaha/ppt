@@ -16,6 +16,10 @@
 \AtBeginDocument{\usebeamerfont{normal text}}
 
 
+%
+% Getter and Setter Commands for Inserting Metadata
+%
+
 \def\university{\@dblarg\beamer@university}
 \long\def\beamer@university[#1]#2{%
   \def\insertuniversity{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
