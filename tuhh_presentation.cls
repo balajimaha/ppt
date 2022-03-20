@@ -57,14 +57,17 @@
   {\latexincludegraphics[#1]{#2}}%
 }
 
+%
 % Defaults
+%
+
 \university{Hamburg University of Technology (TUHH)}
 \closingstatement{Thank You very much}
 \street{Am Schwarzenberg-Campus 1}
 \city{21073 Hamburg}
 \website{www.tuhh.de}
 \telephonenumber{+49 40 42878-3330}
-\institute{Corresponding Authors Institute}
+\institute{Corresponding Author's Institute}
 \email{corresponding.author@tuhh.de}
 \author[Corresponding Author]{First Author, Second Author}
 
@@ -73,6 +76,14 @@
   \closingstatement{Vielen Dank}%
   \university{Technische Universität Hamburg (TUHH)}%
   \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
+}
+
+%
+% Institute Branding 
+%
+
+% None
+\DeclareOption{institute=none}{%
 }
 
 % Example
