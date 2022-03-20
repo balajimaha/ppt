@@ -1,4 +1,5 @@
 \ProvidesClass{tuhh_presentation}
+% See also the wiki page https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/wikis/tuhh_presentation-Class
 
 % First option pass to base class
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
