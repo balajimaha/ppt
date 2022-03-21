@@ -1,6 +1,7 @@
 \ProvidesClass{tuhh_presentation}
+% See also the wiki page https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/wikis/tuhh_presentation-Class
 
-% First option pass to base class
+% First option pass to base class (for options not declared by derived class)
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 \ProcessOptions\relax
 
@@ -15,6 +16,10 @@
 
 \AtBeginDocument{\usebeamerfont{normal text}}
 
+
+%
+% Getter and Setter Commands for Inserting Metadata
+%
 
 \def\university{\@dblarg\beamer@university}
 \long\def\beamer@university[#1]#2{%
@@ -51,6 +56,7 @@
   \def\insertclosingstatement{\def\inst{\beamer@insttitle}\def\and{\beamer@andtitle}#2}%
 }
 
+% Redefine \includegraphics
 \LetLtxMacro\latexincludegraphics\includegraphics
 \renewcommand{\includegraphics}[2][]{%
   \textcolor{black}%
@@ -88,7 +94,11 @@
 
 % Example
 \DeclareOption{institute=test}{%
-  \institute{Institute of Test Author}
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institutsname auf Deutsch}
+  }{
+    \institute{Institute Name in English}
+  }
   \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
 }
 
