@@ -139,6 +139,11 @@
     \vspace{2em}
 }
 
+% Some environments don't put their footnotes to the bottom of the page
+% This override removes the custom TUHH footnoterule 
+\AtBeginEnvironment {tcolorbox}{\renewcommand\footnoterule{}}
+\AtBeginEnvironment {beamerboxesrounded}{\renewcommand\footnoterule{}}
+
 \let\oldDate\date
 \makeatletter
 \renewcommand{\date}[2][]{\def\tempdate{#2}\futurelet\next\checkforcustomdate}% Save first argument, then call...
