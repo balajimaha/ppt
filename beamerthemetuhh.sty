@@ -19,6 +19,10 @@
 
 \setbeamertemplate{navigation symbols}{}
 
+% URL links highlighting 
+\definecolor{links}{HTML}{0000EE}
+\hypersetup{colorlinks, urlcolor=links}
+
 \let\oldItemize\itemize
 \let\oldItemizeEnd\enditemize
 \renewenvironment{itemize}{\oldItemize\addtolength{\itemsep}{1.5mm}}{\oldItemizeEnd}
