@@ -22,6 +22,9 @@
 % URL links highlighting 
 \hypersetup{colorlinks, urlcolor=links, linkcolor=tuhhText}
 
+\let\oldttfamily\ttfamily
+\renewcommand{\ttfamily}{\Large\oldttfamily}
+
 \let\oldItemize\itemize
 \let\oldItemizeEnd\enditemize
 \renewenvironment{itemize}{\oldItemize\addtolength{\itemsep}{1.5mm}}{\oldItemizeEnd}
