@@ -19,6 +19,9 @@
 
 \setbeamertemplate{navigation symbols}{}
 
+\let\oldttfamily\ttfamily
+\renewcommand{\ttfamily}{\Large\oldttfamily}
+
 \let\oldItemize\itemize
 \let\oldItemizeEnd\enditemize
 \renewenvironment{itemize}{\oldItemize\addtolength{\itemsep}{1.5mm}}{\oldItemizeEnd}
