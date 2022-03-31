@@ -27,16 +27,15 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 - A GER-localized version via the `german` document class option
 - Foot notes
 - Stylized TOC slide
+- Stylized tables
 - End slide with author contact details
 - Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/snippets)
 
 # What you can (currently) **not** expect:
 - Design slides separating different sections
-- Stylized tables
 - Long-term compatibility
 - Perfect typesetting (inconsistent spacing might still occur)
 - Installation using CTAN
-
 
 # How to contribute:
 Feel free to contact the current maintainer at `leonard.fisser@tuhh.de`.  
