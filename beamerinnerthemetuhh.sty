@@ -315,5 +315,12 @@
   }
 }
 
+% Allows for filled background tabular cells
+\newcommand\tuhhHead[1]{%
+  \cellcolor{tuhhTeal}\textcolor{white}{#1}
+}
+% Supplies new tuhhtabular env with custom coloring and formating
+\newenvironment{tuhhtabular}{\arrayrulecolor{tuhhTeal}\color{tuhhTeal}\def\arraystretch{1.5}\tabular}{\endtabular\arrayrulecolor{tuhhText}\color{tuhhText}}
+
 \mode
 <all>
