@@ -4,6 +4,7 @@
   \usebeamertemplate{content_frame_background}
 }
 
+
 \defbeamertemplate*{content_frame_background}{tuhh}[1][]{
   \setbeamertemplate{background}{
     \begin{tikzpicture}
@@ -314,6 +315,38 @@
     \end{tikzpicture}
   }
 }
+
+% by https://tex.stackexchange.com/a/282988
+% this fixes misalignment of theorem title and body
+\setbeamertemplate{block begin}
+{
+  \par\vskip\medskipamount%
+  \begin{beamercolorbox}[colsep*=2mm]{block title}
+    \usebeamerfont*{block title}\insertblocktitle%
+  \end{beamercolorbox}%
+  {\parskip0pt\par}%
+  \ifbeamercolorempty[bg]{block title}
+  {}
+  {\ifbeamercolorempty[bg]{block body}{}{\nointerlineskip\vskip-0.5pt}}%
+  \usebeamerfont{block body}%
+  \begin{beamercolorbox}[colsep*=2mm,vmode]{block body}%
+    \ifbeamercolorempty[bg]{block body}{\vskip-.25ex}{\vskip-.75ex}\vbox{}%
+}
+
+%typesetting of theorems
+%taken from beameruserguide p.12
+\setbeamertemplate{theorem begin}
+{%
+\begin{\inserttheoremblockenv}
+{%
+\inserttheoremheadfont
+\inserttheoremname
+\inserttheoremnumber
+\ifx\inserttheoremaddition\@empty\else\ (\inserttheoremaddition)\fi%
+\inserttheorempunctuation
+}%
+}
+\setbeamertemplate{theorem end}{\end{\inserttheoremblockenv}}
 
 % Allows for filled background tabular cells
 \newcommand\tuhhHead[1]{%
