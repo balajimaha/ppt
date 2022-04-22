@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage[backend=biber,style=ieee]{biblatex}
 
 \title{Title/Headline of Hamburg University of Technology Presentation}
 \date{\today} % or \date{dd}{mm}{yyyy} or \date{Text}
@@ -14,6 +15,8 @@
 \telephonenumber{+49 40 42878-3330}
 
 %\autofontdecrement % This commands will automatically reduce font size for itemize/enumerate environments
+
+\addbibresource{demo_tuhh_presentation.bib}
 
 \begin{document}
 
@@ -69,7 +72,6 @@
     You can even have multiple footnotes\footnote{Hello again!}!
 
     What about really long footnotes\footnote{Let's see how long we can make this footnote, just to make sure you can put everything you want here!}?
-
 \end{frame}
 
 \begin{frame}{Blocks, Definitions, Theorems and Proofs}
@@ -128,6 +130,17 @@
     \end{table}
 \end{frame}
 
+\begin{frame}{Miscellaneous}
+    Collection of \LaTeX~commands and their appearance in this template:
+    \begin{itemize}
+        \item Citations work as usual: \cite{tuhh2022demo}
+    \end{itemize}
+\end{frame}
+
 \finalpage
+
+\begin{frame}{References}
+    \printbibliography
+\end{frame}
 
 \end{document}
