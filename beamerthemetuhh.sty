@@ -22,7 +22,21 @@
 \setbeamertemplate{bibliography item}[text]
 
 % URL links highlighting 
-\hypersetup{colorlinks=true, allcolors=tuhhTecBlue, linkcolor=tuhhText}
+\hypersetup{colorlinks=true, allcolors=tuhhTecBlue}
+
+% Remove link coloring for specific environments
+\AtBeginDocument{
+  % If citations are used, we remove link coloring
+  \@ifundefined{cite}{}
+  {\let\oldcite\cite%
+   \renewcommand{\cite}[1]{{\hypersetup{hidelinks}\oldcite{#1}}}%
+  }
+  % References should not be colored
+  \let\oldref\ref%
+  \renewcommand{\ref}[1]{{\hypersetup{hidelinks}\oldref{#1}}}%
+  % TOC entry links have to be hidden as well, but this is done in the following command renew of \tableofcontents.
+  % Links in frame titles should also be hidden. This is done in the frame composition itself.
+}
 
 \let\oldttfamily\ttfamily
 \renewcommand{\ttfamily}{\Large\oldttfamily}
@@ -95,7 +109,10 @@
     \hfill
   \end{minipage}
   \begin{minipage}[c][137.74mm]{0.60\textwidth}
+    {
+    \hypersetup{hidelinks}
     \oldTableOfContents[#1]
+    }
   \end{minipage}
 }
 
