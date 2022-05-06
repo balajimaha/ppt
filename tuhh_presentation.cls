@@ -122,6 +122,15 @@
   \institutebranded{.theme_imgs/e10_logo_titlepage.pdf}{.theme_imgs/e10_logo_content.pdf}
 }
 
+% Institute of Control Systems (E-14)
+\DeclareOption{institute=e14}{%
+  \@ifclasswith{tuhh_presentation}{german}{
+    \institute{Institut für Regelungstechnik}
+  }{
+    \institute{Institute of Control Systems}
+  }
+  \institutebranded{.theme_imgs/e14_logo.pdf}{.theme_imgs/e14_logo.pdf}
+}
 
 % Second option pass to derived class
 \ProcessOptions\relax
