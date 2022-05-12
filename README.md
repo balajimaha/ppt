@@ -1,12 +1,12 @@
 # The (unofficial) TUHH LaTeX Beamer Presentation Template Project
 The Hamburg University of Technology launched a new Brand Identity on 17.11.2021.  
-To unify the visual representation of the TUHH, a style guide, Powerpoint templates and additional materials were designed.  
-As LaTeX is still in heavy use for scientific typesetting and document creation, this project aims to translate the available Powerpoint templates to an equivalent Beamer class.  
+To unify the visual representation of the TUHH, a style guide, PowerPoint templates and additional materials were designed.  
+As LaTeX is still in heavy use for scientific typesetting and document creation, this project aims to translate the available PowerPoint templates to an equivalent Beamer class.  
 It has to be noted, that this project is conducted in a purely complementary nature.  
 Furthermore, LaTeX and in particular Beamer templates are complex, convoluted and delicate pieces of code.  
 Since we do not have any professional background in LaTeX template design, bugs, inconsistencies and errors might very well occur.
 
-Over the course of this project, we strive to implement all Powerpoint template features, improve consistency and fix reported template errors.  
+Over the course of this project, we strive to implement all PowerPoint template features, improve consistency and fix reported template errors.  
 However, even at this early stage, we are confident that the provided document class is able to typeset TUHH-styled presentations.   
 If you'd like to contribute, feel free to contact us, open issues, or implement features and create merge request.  
 
@@ -17,6 +17,8 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 2. Use `demo_tuhh_presentation.tex` as a starting point
 3. Adapt meta-data such as `\date`, `\author`, `\institute`, `\telephonenumber`
 4. Add your own slides
+5. Run latexmk in the root folder and it will do the job
+6. Run latexmk -c if you want to cleanup the build folder or generate the output files from scratch.
 
 
 # What you can expect:
