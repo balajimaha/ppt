@@ -18,21 +18,20 @@ If you'd like to contribute, feel free to contact us, open issues, or implement 
 3. Adapt meta-data such as `\date`, `\author`, `\institute`, `\telephonenumber`
 4. Add your own slides
 
-
 # What you can expect:
 - A title slide with author, date and title placement
 - A default content slide, with slide number, title and date placement
-- Integration of custom Poppins font for pdflatex
-- Use of TUHH color schemes
-- A GER-localized version via the `german` document class option
-- Foot notes
 - Stylized TOC slide
-- Stylized tables
+- Design slides separating different sections
 - End slide with author contact details
-- Additional information on fixes and additional elements as [snippets](https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/snippets)
+- Use of TUHH color schemes
+- Integration of custom Poppins font
+- Stylized tables
+- A GER-localized version via the `german` document class option
+- Branded slides with your institute logo (see [wiki](https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/wikis/Slides-with-Institute-Logos))
+- Footnotes
 
 # What you can (currently) **not** expect:
-- Design slides separating different sections
 - Long-term compatibility
 - Perfect typesetting (inconsistent spacing might still occur)
 - Installation using CTAN
