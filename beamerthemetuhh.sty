@@ -132,10 +132,18 @@
   {}
   {}
 
-% Finalpage definition
+% Agendaframe definition
 \makeatletter
 \define@key{beamerframe}{agenda}[true]{%
   \setbeamertemplate{content_frame}{\usebeamertemplate{agenda_frame}}
+  \usebeamertemplate{content_frame}%
+  }
+\makeatother
+
+% Section slide definitions
+\makeatletter
+\define@key{beamerframe}{section polka}[true]{%
+  \setbeamertemplate{content_frame}{\usebeamertemplate{section page polka}}
   \usebeamertemplate{content_frame}%
   }
 \makeatother
@@ -188,5 +196,11 @@
   \renewcommand{\titlepageicon}{#1}
   \renewcommand{\frameicon}{#2}
 } 
+
+\AtBeginSection[]
+{
+  \begin{frame}[section polka]
+  \end{frame}
+}
 
 \mode<all>
