@@ -1,8 +1,9 @@
-\documentclass[17pt,institute=none]{tuhh_presentation}
+\documentclass[17pt,institute=e4]{tuhh_presentation}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[backend=biber,style=ieee]{biblatex}
+
 
 \title{Title/Headline of Hamburg University of Technology Presentation}
 \date{\today} % or \date{dd}{mm}{yyyy} or \date{Text}
@@ -26,10 +27,8 @@
     \tableofcontents
 \end{frame}
 
-\begin{frame}{This is a presentation slide!}
-    \section{Example: Item Lists}\label{se:exp_lists}
-    \subsection{Example: Sub-Item Lists}
-    
+\section{Environments}\label{se:environments}
+\begin{frame}{List Environments}
     \begin{minipage}{0.49\textwidth}
         \begin{itemize}
             \item This is an item.
@@ -50,33 +49,7 @@
     \end{minipage}
 \end{frame}
 
-\begin{frame}{This is a second presentation slide!}
-    \section{Example: Font Sizes}
-
-    \centering{\textbf{This is the place where you can write your content in bold.}}
-
-    \centering{\textit{This is the place where you can write your content in italic.}}
-
-    \centering{\textbf{\textit{This is the place where you can write your content in bold and italic.}}}
-
-    \centering{\LARGE This is the place where content is LARGE.}
-
-    \centering{But if your sentences get too long, you cannot be sure that the whole sentence will fit into the same line - You might get a linebreak!}
-\end{frame}
-
-\begin{frame}{Wow even a third slide!}
-    \section{Example: Footnotes}
-
-    You can use footnotes\footnote{Hello from down here!}!
-
-    You can even have multiple footnotes\footnote{Hello again!}!
-
-    What about really long footnotes\footnote{Let's see how long we can make this footnote, just to make sure you can put everything you want here!}?
-\end{frame}
-
-\begin{frame}{Blocks, Definitions, Theorems and Proofs}
-    \section{Example: Blocks, Definitions, Theorems and Proofs}
-
+\begin{frame}{Block Environments}
     \begin{block}{My Block}
       This is a block with a title.
     \end{block}
@@ -94,8 +67,31 @@
     \end{proof}
 \end{frame}
 
+
+\section{Fonts}
+\begin{frame}{Font Sizes}
+    \centering{\textbf{This is the place where you can write your content in bold.}}
+
+    \centering{\textit{This is the place where you can write your content in italic.}}
+
+    \centering{\textbf{\textit{This is the place where you can write your content in bold and italic.}}}
+
+    \centering{\LARGE This is the place where content is LARGE.}
+
+    \centering{But if your sentences get too long, you cannot be sure that the whole sentence will fit into the same line - You might get a linebreak!}
+\end{frame}
+
+\begin{frame}{Footnotes}
+    You can use footnotes\footnote{Hello from down here!}!
+
+    You can even have multiple footnotes\footnote{Hello again!}!
+
+    What about really long footnotes\footnote{Let's see how long we can make this footnote, just to make sure you can put everything you want here!}?
+\end{frame}
+
+
+\section{Tables}
 \begin{frame}{Tables}
-    \section{Example: Tables}
     \begin{table}
         \begin{tuhhtabular}{|l|l|}
             \multicolumn{2}{c}{\tuhhHead{TU Table for Presentations}} \\
@@ -130,13 +126,14 @@
     \end{table}
 \end{frame}
 
+\section{Miscellaneous}
 \begin{frame}{Miscellaneous}
     Collection of \LaTeX~commands and their appearance in this template:
     \begin{itemize}
         \item Citations using \textit{cite}: \cite{tuhh2022demo}
         \item Hyperlinks using \textit{href}: \href{https://www.tuhh.de}{https://www.tuhh.de}
         \item Hyperlinks using \textit{url}: \url{https://www.tuhh.de}
-        \item Document references using \textit{ref}: Section \ref{se:exp_lists}
+        \item Document references using \textit{ref}: Section \ref{se:environments}
     \end{itemize}
 \end{frame}
 
