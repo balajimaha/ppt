@@ -138,7 +138,7 @@
   \setbeamertemplate{background}{
     \begin{tikzpicture}
       \begin{beamercolorbox}{tuhh teal}
-        \node[outer sep=0, inner sep=0, anchor=west] (thank you) at (18.08mm, \the\paperheight-15.99mm-44.22mm) {\usebeamerfont{title} \hypersetup{hidelinks} \insertsectionnumber. \insertsection};
+        \node[outer sep=0, inner sep=0, anchor=west] (slide title) at (18.08mm, \the\paperheight-15.99mm-44.22mm) {\usebeamerfont{title} \hypersetup{hidelinks} \insertsectionnumber. \parbox[t]{0.925\textwidth}{\insertsection}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
         \node[outer sep=0, inner sep=0, anchor=center] (tuhh_logo) at (\the\paperwidth-5.34mm-16.05mm, \the\paperheight-16.05mm-12.91mm) {\includegraphics[width=25.82mm, height=25.82mm, keepaspectratio]{\frameicon}};
         \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
