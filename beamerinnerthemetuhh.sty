@@ -6,7 +6,7 @@
 
 % compare https://tex.stackexchange.com/questions/105910/correct-indented-sections-in-beamers-toc
 \defbeamertemplate{section in toc}{sections numbered alligned}[1][]{
-  \leavevmode\inserttocsectionnumber. \parbox[t]{\textwidth}{\inserttocsection}\par
+  \leavevmode\parbox[t]{1em}{\raggedleft\inserttocsectionnumber.} \parbox[t]{\textwidth}{\inserttocsection}\par
 }
 
 \defbeamertemplate*{content_frame_background}{tuhh}[1][]{
