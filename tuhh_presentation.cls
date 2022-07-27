@@ -82,6 +82,8 @@
   \closingstatement{Vielen Dank}%
   \university{Technische Universität Hamburg (TUHH)}%
   \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
+  \renewcommand{\figurename}{Abbildung}%
+  \renewcommand{\tablename}{Tabelle}%
 }
 
 %
