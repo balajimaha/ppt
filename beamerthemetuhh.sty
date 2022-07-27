@@ -83,7 +83,7 @@
 \makeatother
 
 \renewcommand*{\titlepage}{
-  \begin{frame}[titlepage]
+  \begin{frame}[titlepage, noframenumbering]
     \usebeamertemplate{\titlepagetextformat}
   \end{frame}
 }
@@ -141,6 +141,12 @@
   \usebeamertemplate{content_frame}%
   }
 \makeatother
+
+\newcommand{\agenda}{
+  \begin{frame}[agenda, noframenumbering]
+    \tableofcontents
+  \end{frame}
+}
 
 % Section slide definitions
 \makeatletter
@@ -201,7 +207,7 @@
 
 \AtBeginSection[]
 {
-  \begin{frame}[section polka]
+  \begin{frame}[section polka, noframenumbering]
   \end{frame}
 }
 
