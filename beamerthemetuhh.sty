@@ -166,19 +166,30 @@
     \textcolor{tuhhTeal}{
       \rule{\dimexpr \textwidth+61.67mm-5.24mm-5.24mm-5.24mm-5.24mm-0.5mm}{1pt}
     }
-  \vskip -0.9em
+  \vskip -1em
   }
 }
 
 % The footline is the lowest element in a frame, we can therfore use it to "shift" footnote entries.
 \setbeamertemplate{footline}{
-    \vspace{2em}
+  \vspace{5.34mm}
 }
+
+% see https://tex.stackexchange.com/questions/247826/beamer-full-vertical-centering
+\makeatletter
+\define@key{beamerframe}{c}[true]{% centered
+  \beamer@frametopskip=0pt plus 1fill\relax%
+  \beamer@framebottomskip=0pt plus 1fill\relax%
+  \beamer@frametopskipautobreak=0pt plus .4\paperheight\relax%
+  \beamer@framebottomskipautobreak=0pt plus .6\paperheight\relax%
+  \def\beamer@initfirstlineunskip{}%
+}
+\makeatother
 
 % Some environments don't put their footnotes to the bottom of the page
 % This override removes the custom TUHH footnoterule 
-\AtBeginEnvironment {tcolorbox}{\renewcommand\footnoterule{}}
-\AtBeginEnvironment {beamerboxesrounded}{\renewcommand\footnoterule{}}
+\AtBeginEnvironment{tcolorbox}{\renewcommand\footnoterule{}}
+\AtBeginEnvironment{beamerboxesrounded}{\renewcommand\footnoterule{}}
 
 \let\oldDate\date
 \makeatletter
