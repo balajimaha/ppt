@@ -41,23 +41,15 @@
 \let\oldttfamily\ttfamily
 \renewcommand{\ttfamily}{\Large\oldttfamily}
 
-\let\oldItemize\itemize
-\let\oldItemizeEnd\enditemize
-\renewenvironment{itemize}{\oldItemize\addtolength{\itemsep}{1.5mm}}{\oldItemizeEnd}
-
-\let\oldEnumerate\enumerate
-\let\oldEnumerateEnd\endenumerate
-\renewenvironment{enumerate}{\oldEnumerate\addtolength{\itemsep}{1.5mm}}{\oldEnumerateEnd}
-
-\setlist[enumerate]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}.}
-\setlist[itemize]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}}
+\setlist[enumerate]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}., itemsep=1.5mm}
+\setlist[itemize]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, itemsep=1.5mm}
 
 % Allows the user to decrement font size for sub items in enumerate and itemize envs
 \newcommand{\autofontdecrement}{
-  \setlist[enumerate, 2]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}., before*=\small } 
-  \setlist[enumerate, 3]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}., before*=\footnotesize }
-  \setlist[itemize, 2]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, before*=\small } 
-  \setlist[itemize, 3]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, before*=\footnotesize }  
+  \setlist[enumerate, 2]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}., before*=\small, itemsep=1.5mm}
+  \setlist[enumerate, 3]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}., before*=\footnotesize, itemsep=1.5mm}
+  \setlist[itemize, 2]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, before*=\small, itemsep=1.5mm}
+  \setlist[itemize, 3]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}, before*=\footnotesize, itemsep=1.5mm}
 }
 
 \newcommand{\tuhhwordmark}{.theme_imgs/TUHH_logo-wortmarke_en_rgb.pdf}% Titlepage definition
