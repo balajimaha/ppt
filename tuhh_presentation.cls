@@ -5,7 +5,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{beamer}}
 \ProcessOptions\relax
 
-\LoadClass{beamer}
+\LoadClass[17pt]{beamer}
 \usetheme{tuhh}
 \setbeamertemplate{caption}[numbered]
 
@@ -77,7 +77,8 @@
 \email{corresponding.author@tuhh.de}
 \author[Corresponding Author]{First Author, Second Author}
 
-
+\DeclareOption{english}{%
+}
 \DeclareOption{german}{%
   \closingstatement{Vielen Dank}%
   \university{Technische Universität Hamburg (TUHH)}%
