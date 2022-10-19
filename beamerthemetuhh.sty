@@ -113,16 +113,8 @@
 
 % Adjust TOC entry spacing
 \makeatletter
-\patchcmd{\beamer@sectionintoc}
-  {\vfill}
-  {\vskip 1em}
-  {}
-  {}
-
-\pretocmd{\beamer@subsectionintoc}
-  {\vskip 0.25em}
-  {}
-  {}
+\patchcmd{\beamer@sectionintoc}{\vfill}{\vskip 0.6em}{}{}
+\apptocmd{\beamer@sectionintoc}{\vskip 0.4em}{}{}
 
 % Agendaframe definition
 \setbeamertemplate{section in toc}[sections numbered alligned]
