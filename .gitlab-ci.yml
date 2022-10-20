@@ -1,7 +1,10 @@
-image: collaborating.tuhh.de:5005/e-4/utilities/docker-images/ci-latex
+stages:
+  - build
+  - release
 
-build:
+build_job:
   stage: build
+  image: collaborating.tuhh.de:5005/e-4/utilities/docker-images/ci-latex
   script:
     - latexmk -pdf demo_tuhh_presentation
   environment:
@@ -11,3 +14,14 @@ build:
     paths:
       - demo_tuhh_presentation.pdf
 
+release_job:
+  stage: release
+  image: collaborating.tuhh.de:5005/e-4/utilities/docker-images/ci-latex
+  rules:
+    - if: $CI_COMMIT_BRANCH == "master"  # Run this job when commits are merged into master branch
+  script:
+    - echo "running release_job for $TAG"
+  release:                                        
+    tag_name: 'v0.$CI_PIPELINE_IID'
+    description: 'v0.$CI_PIPELINE_IID'
+    ref: '$CI_COMMIT_SHA'
