@@ -18,7 +18,7 @@ release_job:
   stage: release
   image: collaborating.tuhh.de:5005/e-4/utilities/docker-images/ci-latex
   rules:
-    - if: $CI_COMMIT_BRANCH == "master"  # Run this job when commits are merged into master branch && $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_BRANCH == "master" && $CI_PIPELINE_SOURCE == "merge_request_event"
   script:
     - echo "running release_job for $TAG"
   release:                                        
