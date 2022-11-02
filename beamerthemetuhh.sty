@@ -41,6 +41,8 @@
 
 \let\oldttfamily\ttfamily
 \renewcommand{\ttfamily}{\Large\oldttfamily}
+\let\oldcaption\caption
+\renewcommand*{\caption}{\renewcommand{\ttfamily}{\fontsize{18pt}{18pt}\oldttfamily}\oldcaption}
 
 \setlist[enumerate]{leftmargin=\leftmargini, label=\makebox[0.5em][c]{\arabic*}.}
 \setlist[itemize]{leftmargin=\leftmargini, label=\raisebox{0.375ex}{\footnotesize$\bullet$}}
