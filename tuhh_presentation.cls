@@ -9,10 +9,11 @@
 \usetheme{tuhh}
 \setbeamertemplate{caption}[numbered]
 
+\usepackage[backend=biber,style=ieee]{biblatex}
+\usepackage[datesep=.,style=ddmmyy]{datetime2}
 \usepackage{.poppins_font/poppins}
 \pdfmapfile{+.poppins_font/Poppins.map}
 
-\usepackage[datesep=.,style=ddmmyy]{datetime2}
 
 \AtBeginDocument{\usebeamerfont{normal text}}
 
@@ -86,6 +87,14 @@
   \renewcommand{\figurename}{Abbildung}%
   \renewcommand{\tablename}{Tabelle}%
 }
+
+%
+% Reference Formatting
+%
+% Override formating for URLs, DOIs and ISSN in references to adhere to correct font
+\DeclareFieldFormat{url}{[Online]\adddot\space Available:\space\url{#1}}
+\DeclareFieldFormat{doi}{DOI\addcolon\space\url{#1}}
+\DeclareFieldFormat{issn}{ISSN\addcolon\space#1}
 
 %
 % Institute Branding 
