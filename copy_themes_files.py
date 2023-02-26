@@ -12,7 +12,9 @@ listFiles = [
     "beamerouterthemetuhh.sty",
     "beamerthemetuhh.sty",
     "tuhh_presentation.cls",
+    "t1poppins.fd"
     ]
+
 themeDir = "tuhh_theme"
 templateTexName = "demo_tuhh_presentation.tex"
 templateBibName = "demo_tuhh_presentation.bib"
