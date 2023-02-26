@@ -18,8 +18,28 @@ You can get the newest version of the template by
 - or downloading a [release](https://collaborating.tuhh.de/e-4/tuhh_latex_presentation/-/releases) version.
 
 # How to use it:
-1. Copy the template files to your presentation folder
+1. Copy the template files to your presentation folder. Thoses are :
+    - the [tuhh_presentation.cls](./tuhh_presentation.cls) file
+    - the [beamercolorthemetuhh.sty](./beamercolorthemetuhh.sty) file
+    - the [beamerfontthemetuhh.sty](./beamerfontthemetuhh.sty) file
+    - the [beamerinnerthemetuhh.sty](./beamerinnerthemetuhh.sty) file
+    - the [beamerouterthemetuhh.sty](./beamerouterthemetuhh.sty) file
+    - the [beamerthemetuhh.sty](./beamerthemetuhh.sty) file
+    - the [tuhh_theme](./tuhh_theme) folder and its content
+
+> :bell: _Hint_ : you can use the [`copy_themes_files.py`](./copy_themes_files.py) python script (from this directory) to copy all the theme files in one given destination, for instance :
+> ```bash
+> $ ./copy_themes_files.py path/of/my/super/cool/presentation
+> ```
+
 2. Use `demo_tuhh_presentation.tex` as a starting point
+
+> :bell: _Hint_ : Eventually, you can also copy this beamer template with a given name in your presentation folder, for instance like this :
+> ```bash
+> $ ./copy_themes_files.py path/of/my/super/cool/presentation --texFileName super_slide_name.tex
+> ```
+> Don't hesitate to use the `-h` option of the `copy_themes_files.py` script for its usage ...
+
 3. Adapt meta-data such as `\date`, `\author`, `\institute`, `\telephonenumber`
 4. Add your own slides
 

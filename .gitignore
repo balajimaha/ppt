@@ -90,7 +90,7 @@ acs-*.bib
 *.t[1-9]
 *.t[1-9][0-9]
 *.tfm
-!.poppins_font/*.tfm
+!tuhh_theme/fonts/*.tfm
 
 #(r)(e)ledmac/(r)(e)ledpar
 *.end

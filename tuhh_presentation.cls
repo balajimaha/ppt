@@ -11,8 +11,8 @@
 
 \usepackage[backend=biber,style=ieee]{biblatex}
 \usepackage[datesep=.,style=ddmmyy]{datetime2}
-\usepackage{.poppins_font/poppins}
-\pdfmapfile{+.poppins_font/Poppins.map}
+\usepackage{tuhh_theme/fonts/poppins}
+\pdfmapfile{+tuhh_theme/fonts/Poppins.map}
 
 
 \AtBeginDocument{\usebeamerfont{normal text}}
@@ -83,7 +83,7 @@
 \DeclareOption{german}{%
   \closingstatement{Vielen Dank}%
   \university{Technische Universität Hamburg (TUHH)}%
-  \settuhhwordmark{.theme_imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
+  \settuhhwordmark{tuhh_theme/imgs/TUHH_logo-wortmarke_de_rgb.pdf}%
   \renewcommand{\figurename}{Abbildung}%
   \renewcommand{\tablename}{Tabelle}%
 }
@@ -111,7 +111,7 @@
   }{
     \institute{Institute Name in English}
   }
-  \institutebranded{.theme_imgs/institute_logo_titlepage.pdf}{.theme_imgs/institute_logo_content.pdf}
+  \institutebranded{tuhh_theme/imgs/institute_logo_titlepage.pdf}{tuhh_theme/imgs/institute_logo_content.pdf}
 }
 
 % Institute of Communication Networks (E-4)
@@ -121,7 +121,7 @@
   }{
     \institute{Institute of Communication Networks}
   }
-  \institutebranded{.theme_imgs/e4_logo_titlepage.pdf}{.theme_imgs/e4_logo_content.pdf}
+  \institutebranded{tuhh_theme/imgs/e4_logo_titlepage.pdf}{tuhh_theme/imgs/e4_logo_content.pdf}
 }
 
 % Institute of Mathematics (E-10)
@@ -131,7 +131,7 @@
   }{
     \institute{Institute of Mathematics}
   }
-  \institutebranded{.theme_imgs/e10_logo_titlepage.pdf}{.theme_imgs/e10_logo_content.pdf}
+  \institutebranded{tuhh_theme/imgs/e10_logo_titlepage.pdf}{tuhh_theme/imgs/e10_logo_content.pdf}
 }
 
 % Institute of Control Systems (E-14)
@@ -141,7 +141,7 @@
   }{
     \institute{Institute of Control Systems}
   }
-  \institutebranded{.theme_imgs/e14_logo.pdf}{.theme_imgs/e14_logo.pdf}
+  \institutebranded{tuhh_theme/imgs/e14_logo.pdf}{tuhh_theme/imgs/e14_logo.pdf}
 }
 
 % Second option pass to derived class
