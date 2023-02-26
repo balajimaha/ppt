@@ -22,6 +22,6 @@ release_job:
   script:
     - echo "running release_job for $TAG"
   release:                                        
-    tag_name: 'v1.1'
-    description: 'v1.1'
+    tag_name: 'v1.2'
+    description: 'v1.2'
     ref: '$CI_COMMIT_SHA'
