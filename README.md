@@ -26,22 +26,12 @@ You can get the newest version of the template by
     - the [beamerouterthemetuhh.sty](./beamerouterthemetuhh.sty) file
     - the [beamerthemetuhh.sty](./beamerthemetuhh.sty) file
     - the [tuhh_theme](./tuhh_theme) folder and its content
-
-> :bell: _Hint_ : you can use the [`copy_themes_files.py`](./copy_themes_files.py) python script (from this directory) to copy all the theme files in one given destination, for instance :
-> ```bash
-> $ ./copy_themes_files.py path/of/my/super/cool/presentation
-> ```
-
 2. Use `demo_tuhh_presentation.tex` as a starting point
-
-> :bell: _Hint_ : Eventually, you can also copy this beamer template with a given name in your presentation folder, for instance like this :
-> ```bash
-> $ ./copy_themes_files.py path/of/my/super/cool/presentation --texFileName super_slide_name.tex
-> ```
-> Don't hesitate to use the `-h` option of the `copy_themes_files.py` script for its usage ...
-
 3. Adapt meta-data such as `\date`, `\author`, `\institute`, `\telephonenumber`
 4. Add your own slides
+
+Finally, for a more convenient setup of the presentation you may use the provided [`copy_themes_files.py`](./copy_themes_files.py) python script:`./copy_themes_files.py new/presentation/dir`.
+
 
 # What you can expect:
 - A title slide with author, date and title placement
