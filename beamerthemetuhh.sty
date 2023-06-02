@@ -181,6 +181,14 @@
 }
 \makeatother
 
+% Finalpage definition
+\makeatletter
+\define@key{beamerframe}{notitle}[true]{%
+  \setbeamertemplate{content_frame}{\usebeamertemplate{content_frame_no_title}}
+  \usebeamertemplate{content_frame}%
+  }
+\makeatother
+
 % Some environments don't put their footnotes to the bottom of the page
 % This override removes the custom TUHH footnoterule 
 \AtBeginEnvironment{tcolorbox}{\renewcommand\footnoterule{}}

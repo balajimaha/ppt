@@ -62,6 +62,57 @@
   }
 }
 
+\defbeamertemplate*{content_frame_no_title}{tuhh}[1][]{
+  \setbeamertemplate{background}{
+    \begin{tikzpicture}
+      \begin{beamercolorbox}{tuhh teal}
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        \node[outer sep=0, inner sep=0, anchor=center] (tuhh_logo) at (\the\paperwidth-5.34mm-16.05mm, \the\paperheight-16.05mm-12.91mm) {\includegraphics[width=25.82mm, height=25.82mm, keepaspectratio]{\frameicon}};
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+        %date
+        \node[rectangle,
+          minimum width = 32.10mm,
+          minimum height = 15.99mm,
+          text width = 32.10mm,
+          align=center,
+          outer sep = 0mm,
+          inner sep = 0.0mm,
+          anchor = west,
+          ] at (301.22mm, \the\paperheight-5.24mm-180.00mm) {\usebeamerfont{date_small}\insertdate};
+        %slide number
+        \node[rectangle,
+          minimum width = 32.10mm,
+          minimum height = 4.0mm,
+          text width = 32.10mm,
+          align=center,
+          outer sep = 0mm,
+          inner sep = 0.0mm,
+          anchor = west,
+          ] at (301.22mm, \the\paperheight-140.26mm) {\usebeamerfont{frame_number}\insertframenumber};
+
+        \useasboundingbox (0,0) rectangle(\the\paperwidth,\the\paperheight);
+          \node[rectangle,
+                draw,
+                line width = 1pt,
+                minimum width = 327.91mm,
+                minimum height = 179.99mm,
+                outer sep = 5.34mm,
+                anchor = south west,
+                ] at (0, 0) {};
+
+        %upper horz 1
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-37.25mm) -- (301.22mm+32.10mm, \the\paperheight-37.25mm) {};
+        %mid horz 1
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-95.25mm) -- (301.22mm+32.10mm, \the\paperheight-95.25mm) {};
+        %lower horz 1
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-169.25mm) -- (301.22mm+32.10mm, \the\paperheight-169.25mm) {};
+        %first vert
+        \draw[line width = 1pt] (301.22mm, \the\paperheight-5.24mm) -- (301.22mm, \the\paperheight-5.24mm-180.00mm) {};
+      \end{beamercolorbox}%
+    \end{tikzpicture}
+  }
+}
+
 \defbeamertemplate*{plain_background}{tuhh}[1][]{
   \setbeamertemplate{background}{}
 }
